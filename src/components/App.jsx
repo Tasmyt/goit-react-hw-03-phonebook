@@ -21,8 +21,7 @@ export class App extends Component {
     if (parseContacts) {
       this.setState({ contacts: parseContacts })
     };
-  }
-  
+  }  
   addContact = ({ name, number }) => {
     const findContact = this.state.contacts.find(
       contact => contact.name.toLowerCase() === name.toLowerCase()
